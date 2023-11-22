@@ -8,10 +8,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .cont {
-  max-width: 1920px;
+  max-width: 1450px;
   width: 100%;
   background-color: aliceblue;
   display: flex;
@@ -29,12 +30,12 @@ body {
   background-repeat: no-repeat;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  padding: 20px;
 }
 .header > img {
   display: flex;
   justify-content: center;
-  margin-top: 310px;
+  margin-top: 210px;
 }
 .header__meader {
   width: 100%;
@@ -42,7 +43,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 260px;
+  margin-top: 170px;
 }
 .header__meader > p {
   color: #000;
@@ -54,7 +55,7 @@ body {
 }
 .header__meader > h2 {
   color: #0D302C;
-  font-size: 200px;
+  font-size: 170px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -69,16 +70,15 @@ body {
   justify-content: space-around;
   width: 100%;
   align-items: center;
-  margin-top: 50px;
 }
 .header__logo {
   color: #fff;
-  font-size: 44px;
+  font-size: 34px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  margin-right: -805px;
   font-family: "Raleway", sans-serif;
+  margin-right: -505px;
 }
 .header__nav-menu {
   display: flex;
@@ -89,15 +89,15 @@ body {
   display: inline-block;
   text-decoration: none;
   color: #fff;
-  font-size: 24px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
   letter-spacing: 0.6px;
 }
 .header__nav-menu_feat a:hover {
-  -webkit-text-decoration: underline #00B2A0 3px;
-          text-decoration: underline #00B2A0 3px;
+  -webkit-text-decoration: underline #00B2A0;
+          text-decoration: underline #00B2A0;
   -webkit-animation-duration: 0.3s;
           animation-duration: 0.3s;
 }/*# sourceMappingURL=style.css.map */
