@@ -234,6 +234,7 @@ body {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas: "box1 box1 box2 box2 box3 box3" "box4 box4 box4 box5 box5 box5";
+  margin-bottom: 200px;
 }
 .menu__section2-boxes_box1 {
   width: 100%;
@@ -324,13 +325,112 @@ body {
 }
 .menu__section2-boxes_box4 {
   width: 100%;
-  height: 100px;
-  border: 1px solid;
   grid-area: box4;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.menu__section2-boxes_box4 > .inner2 > p {
+  color: #242121;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+}
+.menu__section2-boxes_box4 > .inner2 > .wrapper1 {
+  display: flex;
+  gap: 10px;
+}
+.menu__section2-boxes_box4 > .inner2 > .wrapper1 > h3 {
+  color: #242121;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.6px;
 }
 .menu__section2-boxes_box5 {
   width: 100%;
-  height: 100px;
-  border: 1px solid;
   grid-area: box5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+.menu__section2-boxes_box5 > h4 {
+  color: #242121;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+}
+.menu__section3 {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  padding-left: 100px;
+  padding-bottom: 100px;
+}
+.menu__section3 > img {
+  width: 50%;
+  padding: 0;
+}
+.menu__section3-rightbox {
+  width: 60%;
+  margin-left: -50px;
+}
+.menu__section3-rightbox > h1 {
+  color: #01353E;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  font-family: "Raleway", sans-serif;
+  margin-top: 50px;
+}
+.menu__section3-rightbox h1::after {
+  content: "/";
+  color: #00B2A0;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  left: -10px;
+  font-family: "Raleway", sans-serif;
+  position: relative;
+  bottom: -30px;
+}
+.menu__section3-rightbox > h2 {
+  color: #242121;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+  margin-top: 100px;
+}
+.menu__section3-rightbox > h3 {
+  color: #242121;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+  margin-top: 32px;
+}
+.menu__section3-rightbox > h4 {
+  color: #242121;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+  margin-top: 30px;
 }/*# sourceMappingURL=style.css.map */
