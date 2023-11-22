@@ -1,0 +1,110 @@
+@import "./_variables";
+@import "./_mixins";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont {
+    max-width: 1920px;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-image: url(./images/Rectangle\ 75.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    
+
+    &>img {
+        display: flex;
+        justify-content: center;
+        margin-top: 310px;
+    }
+
+    &__meader {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 260px;
+
+        &>p {
+            @include StyleText(#000, 24px, normal, 400, normal);
+            letter-spacing: 0.6px;
+        }
+
+
+        &>h2 {
+            @include StyleText(#0D302C, 200px, normal, 600, normal);
+            letter-spacing: 0.6px;
+            font-family: 'Raleway', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+        }
+    }
+
+    // .header__nav
+
+    &__nav {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    // .header__logo
+
+    &__logo {
+        @include StyleText(#fff, 44px, normal, 500, normal);
+        margin-right: -805px;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    // .header__nav-menu
+
+    &__nav-menu {
+        display: flex;
+        gap: 45px;
+        list-style-type: none;
+
+
+        // .header__nav-menu_feat
+
+        &_feat {
+            &>a {
+                display: inline-block;
+                text-decoration: none;
+                @include StyleText(#fff, 24px, normal, 300, normal);
+                letter-spacing: 0.6px;
+            }
+
+            a:hover {
+                text-decoration: underline #00B2A0 3px;
+                animation-duration: 0.3s;
+            }
+        }
+    }
+}
