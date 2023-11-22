@@ -18,7 +18,7 @@ body {
     max-width: 1450px;
     width: 100%;
     background-color: aliceblue;
-    display: flex;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .header {
@@ -34,7 +34,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 20px;
-    
+
 
     &>img {
         display: flex;
@@ -107,4 +107,79 @@ body {
             }
         }
     }
+}
+
+.menu {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // .menu__section1
+
+    &__section1 {
+        margin-top: 190px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        margin-bottom: 200px;
+
+        &>h1 {
+            @include StyleText(#01353E, 48px, normal, 600, normal);
+            letter-spacing: 0.6px;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        h1::after {
+            content: "/";
+            @include StyleText(#00B2A0, 72px, normal, 600, normal);
+            letter-spacing: 0.6px;
+            left: -10px;
+            font-family: 'Raleway', sans-serif;
+            position: relative;
+            bottom: -30px;
+        }
+
+        // .menu__section1-texts
+
+        &-texts {
+            width: 80%;
+            display: flex;
+            margin-top: 100px;
+            gap: 120px;
+            
+            // .menu__section1-texts_text1
+
+            &_text1 {
+                display: flex;
+                width: 50%;
+                flex-direction: column;
+                gap: 30px;
+
+                &>p{
+                    @include StyleText(#242121, 14px, normal, 300, 18px);
+                    letter-spacing: 0.6px;
+                    text-align: start;
+                }
+            }
+            &_text2 {
+                display: flex;
+                width: 50%;
+                flex-direction: column;
+                gap: 55px;
+
+                &>p{
+                    @include StyleText(#242121, 14px, normal, 300, 18px);
+                    letter-spacing: 0.6px;
+                    text-align: start;
+                }
+            }
+        }
+    }
+
+
 }
