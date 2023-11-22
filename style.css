@@ -31,11 +31,24 @@ body {
   align-items: center;
   justify-content: center;
   padding: 20px;
+  position: relative;
+}
+.header::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #01353E 0%, rgba(51, 51, 51, 0.6) 31.64%, rgba(51, 51, 51, 0.22) 74.35%, rgba(51, 51, 51, 0) 99.87%);
+  background-position: center;
+  background-size: cover;
+  inset: 0;
+  position: absolute;
+  opacity: 0.4;
 }
 .header > img {
   display: flex;
   justify-content: center;
   margin-top: 210px;
+  z-index: 2;
 }
 .header__meader {
   width: 100%;
@@ -44,6 +57,7 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: 170px;
+  z-index: 2;
 }
 .header__meader > p {
   color: #000;
@@ -70,6 +84,7 @@ body {
   justify-content: space-around;
   width: 100%;
   align-items: center;
+  z-index: 2;
 }
 .header__logo {
   color: #fff;
@@ -89,7 +104,7 @@ body {
   display: inline-block;
   text-decoration: none;
   color: #fff;
-  font-size: 20px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -177,4 +192,145 @@ body {
   line-height: 18px;
   letter-spacing: 0.6px;
   text-align: start;
+}
+.menu__section2 {
+  width: 100%;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.menu__section2 > h1 {
+  color: #01353E;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  font-family: "Raleway", sans-serif;
+  margin-top: 200px;
+}
+.menu__section2 h1::after {
+  content: "/";
+  color: #00B2A0;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  left: 5px;
+  font-family: "Raleway", sans-serif;
+  position: relative;
+  bottom: -30px;
+}
+.menu__section2-boxes {
+  margin-left: 360px;
+  margin-right: 360px;
+  margin-top: 100px;
+  gap: 75px;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "box1 box1 box2 box2 box3 box3" "box4 box4 box4 box5 box5 box5";
+}
+.menu__section2-boxes_box1 {
+  width: 100%;
+  grid-area: box1;
+}
+.menu__section2-boxes_box1 > .inner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.menu__section2-boxes_box1 > .inner > h2 {
+  color: #242121;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+}
+.menu__section2-boxes_box1 > p {
+  margin-top: 19px;
+  color: #242121;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+  text-align: start;
+}
+.menu__section2-boxes_box2 {
+  width: 100%;
+  grid-area: box2;
+}
+.menu__section2-boxes_box2 > .inner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.menu__section2-boxes_box2 > .inner > h2 {
+  color: #242121;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.6px;
+}
+.menu__section2-boxes_box2 > p {
+  margin-top: 19px;
+  color: #242121;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+  text-align: start;
+}
+.menu__section2-boxes_box3 {
+  width: 100%;
+  grid-area: box3;
+}
+.menu__section2-boxes_box3 > .inner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.menu__section2-boxes_box3 > .inner > h2 {
+  color: #242121;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.6px;
+}
+.menu__section2-boxes_box3 > p {
+  margin-top: 19px;
+  color: #242121;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+  text-align: start;
+}
+.menu__section2-boxes_box4 {
+  width: 100%;
+  height: 100px;
+  border: 1px solid;
+  grid-area: box4;
+}
+.menu__section2-boxes_box5 {
+  width: 100%;
+  height: 100px;
+  border: 1px solid;
+  grid-area: box5;
 }/*# sourceMappingURL=style.css.map */
